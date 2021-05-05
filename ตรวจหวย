@@ -1,0 +1,265 @@
+Reword5=[
+480968,748840,'066822',869752,828182,638795,272593,'065471',329282,471611,
+421834,805540,492412,670961,834603,121972,775905,192767,951971,613298,
+214738,739250,845072,494426,442160,539195,143223,691935,131512,708255,
+535198,502699,843657,'021078',593821,856497,654584,109502,177803,367911,
+762722,726769,127869,538128,994676,664331,874607,857405,'026282',564270,
+956530,924475,340310,782121,868897,158826,587083,497769,808032,'012508',
+158927,976222,163816,283855,676179,113580,272706,488609,641860,626161,
+693803,946392,706006,878873,863710,599255,611602,646497,301241,666768,
+833149,789957,478978,334693,266307,562375,576366,955268,621051,246615,
+953113,405224,204862,882779,575012,636188,648682,612595,881738,164745
+]
+Rewords5=[]
+def Change5():
+    for A in Reword5:
+        B=str(A)
+        Rewords5.append(B)
+Change5()        
+Reword4=[
+'057096','018137',317050,659033,407771,
+789765,998769,351904,654321,423385,
+546692,359804,455549,537569,493534,
+297407,615396,757822,400507,217371,
+549321,813078,957451,297314,268687,
+327373,'005163',251389,318906,782939,
+'001038',633931,100096,290932,'058011',
+780525,375207,560123,153465,385707,
+'083299',344991,922726,767452,168015,
+928832,544620,158506,'083596',167105,
+]
+Rewords4=[]
+def Change4():
+    for A in Reword4:
+        B=str(A)
+        Rewords4.append(B)
+Change4()
+Reword3=[
+168007,722224,178971,908640,709773,
+236291,735155,'055077',823120,755045
+]
+Rewords3=[]
+def Change3():
+    for A in Reword3:
+        B=str(A)
+        Rewords3.append(B)
+Change3()
+Reword2=[900413,'002380',357939,877352,514339]
+Rewords2=[]
+def Change2():
+    
+    for A in Reword2:
+        B=str(A)
+        Rewords2.append(B)
+Change2()
+#ต้องแปลง2ตัวเป็นตัวเลขเอง
+Reword22=['18']
+
+#3ตัวท้าย
+Reword33=[498,129]
+Rewords33=[]
+def Change33():
+    for A in Reword33:
+        B=str(A)
+        Rewords33.append(B)
+Change33()
+
+Reword1=501272
+#ข้างเคียงรางวัลที่1
+NReword11=Reword1-1
+NReword12=Reword1+1
+
+Rewords1=[]
+NRewords1=[]
+def Change1():
+        B=str(Reword1)
+        Rewords1.append(B)
+        C=str(NReword11)
+        NRewords1.append(C)
+        D=str(NReword12)
+        NRewords1.append(D)
+Change1()
+
+Number=[538049,801061,136081,115002,336010,783018,525032,312044,496062,947084,
+690110,870136,527153,777185,251199,284103,'074118',326139,589159,864178,
+454243,145252,'018265',816285,436200,760208,'098216',164238,541259,'061280',
+284315,372336,965346,457369,412388,846312,412324,805343,185371,725381,
+536476,358420,285435,106445,882485,477400,639423,610450,609465,474482,
+375017,'094031',591039,535045,345055,175063,863079,160089,818164,563184,
+568199,601102,890115,987154,652166,528186,121202,996212,632224,170232,
+578237,'079260',339264,261272,392300,902305,778334,696327,283345,948360,
+840369,762385,363423,859424,616437,275446,373475,920475,566479,784489,
+212502,478517,621529,809535,466540,214548,626556,134563,961608,750616,
+330524,261531,479564,934582,990507,'002523',499530,419552,472562,733577,
+464651,259682,762600,670615,'081635',402645,753654,206659,'034669',156679,
+612750,753763,731774,705706,415725,977623,225631,707647,360664,525679,
+845693,222781,635702,340710,290723,416739,400763,374775,782787,276874,
+579801,137819,277843,906849,372867,152875,610883,380956,313985,424997,
+555738,853752,468762,603776,149786,248853,412872,666899,'068800',662817,
+310831,597840,103858,961871,485881,'058930',961944,654964,350972,876987,
+889915,'056929',603937,280966,553985,126907,436915,923929,953948,764968]
+Numbers=[]
+def ChangeNumber():
+    for A in Number:
+        B=str(A)
+        Numbers.append(B)
+ChangeNumber()
+
+
+
+
+
+
+def Check1():
+    for import1 in  NRewords1:
+        for import2 in Numbers:
+            if import1[-1]==import2[-1] and import1[-2]==import2[-2] and import1[-3]==import2[-3]:
+                X=1000
+                print( import2,"จาก",import1,"3ตัวข้างเคียงรางวัลที่1ได้", X)    
+    for import1 in  Reword22:
+        for import2 in Numbers:
+            if import1[-1]==import2[-1] and import1[-2]==import2[-2]:
+                X=1000
+                print( import2,"เข้า2ตัวท้ายได้", X)
+            if import1[-1]==import2[-2] and import1[-2]==import2[-1]:
+                X=400
+                print( import2,"2ตัว(กลับ)ได้", X)
+    for import1 in  Rewords33:
+        for import2 in Numbers:
+            if import1[-1]==import2[-1] and import1[-2]==import2[-2] and import1[-3]==import2[-3] and import1[-1]==import1[-2]==import1[-3] and import2[-1]==import2[-2]==import2[-3]:
+                X=600
+                print( import2,"จาก",import1,"3ตัวท้ายตองได้", X)
+                
+            if import1[-1]==import2[-1] and import1[-2]==import2[-3] and import1[-3]==import2[-2] or import1[-1]==import2[-3] and import1[-2]==import2[-2] and import1[-3]==import2[-1] or import1[-1]==import2[-2] and import1[-2]==import2[-1] and import1[-3]==import2[-3] or import1[-1]==import2[-3] and import1[-2]==import2[-1] and import1[-3]==import2[-2] or import1[-1]==import2[-2] and import1[-2]==import2[-3] and import1[-3]==import2[-1]:
+                X=400
+                print( import2,"จาก",import1,"3ตัวท้าย(โต๊ด)ได้", X)
+            if import1[-1]==import2[-1] and import1[-2]==import2[-2] and import1[-3]==import2[-3]:
+                X=2000
+                print( import2,"จาก",import1,"3ตัวท้ายได้", X) 
+    for import1 in  Rewords1:
+        for import2 in Numbers:
+            if import1[-1]==import2[-1] and import1[-2]==import2[-2] and import1[-3]==import2[-3] and import1[-4]==import2[-4] and import1[-5]==import2[-5] and import1[-6]==import2[-6]:
+                X=160000
+                print( import2,"จาก",import1,"6ตัวรางวัลที่1ได้", X)
+                
+            if import1[-1]==import2[-1] and import1[-2]==import2[-2] and import1[-3]==import2[-3] and import1[-4]==import2[-4] and import1[-5]==import2[-5]:
+                X=120000
+                print( import2,"จาก",import1,"5ตัวรางวัลที่1ได้", X)
+                
+            if import1[-1]==import2[-1] and import1[-2]==import2[-2] and import1[-3]==import2[-3]:
+                X=40000
+                print( import2,"จาก",import1,"3ตัวรางวัลที่1ได้", X) 
+                
+            if import1[-1]==import2[-1] and import1[-2]==import2[-2]:
+                X=1000
+                print( import2,"จาก",import1,"2ตัวรางวัลที่1ได้", X)
+                
+            if import1[-1]==import2[-2] and import1[-2]==import2[-1]:
+                X=400
+                print( import2,"จาก",import1,"2ตัว(กลับ)รางวัลที่1ได้", X)
+                
+            if import1[0]==import2[0] and import1[1]==import2[1] and import1[2]==import2[2] and import1[3]==import2[3] and import1[4]==import2[4]:
+                X=3600
+                print( import2,"จาก",import1,"5ตัวหน้ารางวัลที่1ได้", X) 
+                                  
+            if import1[-1]==import2[-1] and import1[-2]==import2[-2] and import1[-3]==import2[-3] and import1[-1]==import1[-2]==import1[-3] and import2[-1]==import2[-2]==import2[-3]:
+                X=2400
+                print( import2,"จาก",import1,"3ตัวท้ายตองรางวัลที่1ได้", X)
+                
+            if import1[-1]==import2[-1] and import1[-2]==import2[-3] and import1[-3]==import2[-2] or import1[-1]==import2[-3] and import1[-2]==import2[-2] and import1[-3]==import2[-1] or import1[-1]==import2[-2] and import1[-2]==import2[-1] and import1[-3]==import2[-3] or import1[-1]==import2[-3] and import1[-2]==import2[-1] and import1[-3]==import2[-2] or import1[-1]==import2[-2] and import1[-2]==import2[-3] and import1[-3]==import2[-1]:
+                X=1000
+                print( import2,"จาก",import1,"3ตัว(โต๊ด)รางวัลที่1ได้", X)
+                
+
+
+
+
+def Check5():
+    for import1 in  Rewords5:
+        for import2 in Numbers:
+            if import1[-1]==import2[-1] and import1[-2]==import2[-2] and import1[-3]==import2[-3] and import1[-4]==import2[-4]:
+                X=400
+                print( import2,"จาก",import1,"4ตัวรางวัลที่5ได้", X)
+            if import1[-1]==import2[-1] and import1[-2]==import2[-2] and import1[-3]==import2[-3] and import1[-4]==import2[-4] and import1[-5]==import2[-5]:
+                X=1200
+                print( import2,"จาก",import1,"5ตัวรางวัลที่5ได้", X)
+            if import1[-1]==import2[-1] and import1[-2]==import2[-2] and import1[-3]==import2[-3] and import1[-1]==import1[-2]==import1[-3] and import2[-1]==import2[-2]==import2[-3]:
+                X=600
+                print( import2,"จาก",import1,"3ตัวท้ายตองรางวัลที่5ได้", X)
+
+
+
+def Check4():
+    for import1 in  Rewords4:
+        for import2 in Numbers:
+            if import1[-1]==import2[-1] and import1[-2]==import2[-2] and import1[-3]==import2[-3]:
+                X=400
+                print( import2,"จาก",import1,"3ตัวรางวัลที่4ได้", X)
+            if import1[-1]==import2[-1] and import1[-2]==import2[-2] and import1[-3]==import2[-3] and import1[-4]==import2[-4]:
+                X=400
+                print( import2,"จาก",import1,"4ตัวรางวัลที่4ได้", X)
+            if import1[-1]==import2[-1] and import1[-2]==import2[-2] and import1[-3]==import2[-3] and import1[-4]==import2[-4] and import1[-5]==import2[-5]:
+                X=1200
+                print( import2,"จาก",import1,"5ตัวรางวัลที่4ได้", X)
+            if import1[-1]==import2[-1] and import1[-2]==import2[-2] and import1[-3]==import2[-3] and import1[-1]==import1[-2]==import1[-3] and import2[-1]==import2[-2]==import2[-3]:
+                X=1200
+                print( import2,"จาก",import1,"3ตัวท้ายตองรางวัลที่4ได้", X)
+
+
+def Check3():
+    for import1 in  Rewords3:
+        for import2 in Numbers:
+            if import1[-1]==import2[-1] and import1[-2]==import2[-2] and import1[-3]==import2[-3]:
+                X=400
+                print( import2,"จาก",import1,"3ตัวรางวัลที่3ได้", X)
+            if import1[-1]==import2[-1] and import1[-2]==import2[-2] and import1[-3]==import2[-3] and import1[-4]==import2[-4]:
+                X=800
+                print( import2,"จาก",import1,"4ตัวรางวัลที่3ได้", X)
+            if import1[-1]==import2[-1] and import1[-2]==import2[-2] and import1[-3]==import2[-3] and import1[-4]==import2[-4] and import1[-5]==import2[-5]:
+                X=1200
+                print( import2,"จาก",import1,"5ตัวรางวัลที่3ได้", X) 
+            if import1[-1]==import2[-1] and import1[-2]==import2[-2] and import1[-3]==import2[-3] and import1[-4]==import2[-4] and import1[-5]==import2[-5] and import1[-6]==import2[-6]:
+                X=5000
+                print( import2,"จาก",import1,"6ตัวรางวัลที่3ได้", X)
+            if import1[-1]==import2[-1] and import1[-2]==import2[-2] and import1[-3]==import2[-3] and import1[-1]==import1[-2]==import1[-3] and import2[-1]==import2[-2]==import2[-3]:
+                X=2000
+                print( import2,"จาก",import1,"3ตัวท้ายตองรางวัลที่3ได้", X) 
+
+
+
+def Check2():
+    for import1 in  Rewords2:
+        for import2 in Numbers:
+            if import1[0]==import2[0] and import1[1]==import2[1] and import1[2]==import2[2] and import1[3]==import2[3] and import1[4]==import2[4]:
+                X=2400
+                print( import2,"จาก",import1,"5ตัวหน้ารางวัลที่2ได้", X) 
+            if import1[-1]==import2[-1] and import1[-2]==import2[-2]:
+                X=400
+                print( import2,"จาก",import1,"2ตัวรางวัลที่2ได้", X) 
+            if import1[-1]==import2[-1] and import1[-2]==import2[-2] and import1[-3]==import2[-3]:
+                X=400
+                print( import2,"จาก",import1,"3ตัวรางวัลที่2ได้", X) 
+            if import1[-1]==import2[-1] and import1[-2]==import2[-2] and import1[-3]==import2[-3] and import1[-4]==import2[-4]:
+                X=1000
+                print( import2,"จาก",import1,"4ตัวรางวัลที่2ได้", X) 
+            if import1[-1]==import2[-1] and import1[-2]==import2[-2] and import1[-3]==import2[-3] and import1[-4]==import2[-4] and import1[-5]==import2[-5]:
+                X=2000
+                print( import2,"จาก",import1,"5ตัวรางวัลที่2ได้", X) 
+            if import1[-1]==import2[-1] and import1[-2]==import2[-2] and import1[-3]==import2[-3] and import1[-4]==import2[-4] and import1[-5]==import2[-5] and import1[-6]==import2[-6]:
+                X=10000
+                print( import2,"จาก",import1,"6ตัวรางวัลที่2ได้", X)
+            if import1[-1]==import2[-1] and import1[-2]==import2[-2] and import1[-3]==import2[-3] and import1[-1]==import1[-2]==import1[-3] and import2[-1]==import2[-2]==import2[-3]:
+                X=2400
+                print( import2,"จาก",import1,"3ตัวท้ายตองรางวัลที่2ได้", X) 
+
+
+def CheckAll():
+    Check5()
+    Check4()
+    Check3()
+    Check2()
+    Check1()
+
+CheckAll()
+
+
